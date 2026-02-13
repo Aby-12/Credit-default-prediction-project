@@ -70,15 +70,19 @@ The balanced logistic regression model achieved the strongest performance in ide
 
 The final selected model (Balanced Logistic Regression) achieved:
 
-- Recall (Defaulters): 62%
-- Precision (Defaulters): 37%
-- Accuracy: 68%
+- Recall (Defaulters): 63%
+- Precision (Defaulters): 36%
+- Accuracy: 76%
+- AUC: 0.70%
 
 The model reduces missed defaulters from 1,009 in the baseline model to 504, cutting false negatives nearly in half.
 
 This improvement significantly enhances the institution’s ability to identify high-risk borrowers.
 
 ---
+## Limitations
+- Higher recall reduces precision, so some low-risk borrowers may be flagged.
+- The model relies on historical data and requires ongoing monitoring.
 
 ## Conclusion
 
@@ -86,3 +90,9 @@ The balanced logistic regression model provides the best trade-off between risk 
 
 The model can be deployed as a screening tool
 
+## Recommendations
+
+- Monitor customers with recent payment delays.
+- Implement early intervention for at-risk borrowers.
+- Review and adjust credit limits based on risk.
+- Use the model to flag high-risk accounts for further review.
